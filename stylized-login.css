@@ -1,0 +1,138 @@
+html{ background: #3E2945;}
+body {
+    margin-bottom: -200px;
+    padding-bottom: -200px;
+    max-height: 85%;
+    background: #3E2945;
+    font-weight: 100;
+    font-family: sans-serif;
+     -webkit-font-smoothing: antialiased;
+}
+.login h1 a {
+    background-image: url('images/logo.jpg');
+}
+body.login {
+    padding-top: 8em;
+    background: #3E2945;
+}
+.wp-core-ui .button-primary {}
+.wp-core-ui .button-primary:hover {}
+#login {
+    width: 500px;
+    padding: 0;
+    margin-bottom: -200px;
+}
+#login h1 {
+    display: none;
+}
+.login form {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.login label,.login form .forgetmenot label  {
+    color: #efefef; font-weight: 100;
+}
+.button .button-primary .button-large,
+#wp-submit,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.wpcf7-submit,
+#subscribe-submit input {
+    font-weight: 100;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: #00943F;
+    color: #efefef;
+    transition: background-color .3s;
+    padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.button .button-primary .button-large:before,
+#wp-submit:before,
+button:before,
+input[type="button"]:before,
+input[type="reset"]:before,
+input[type="submit"]:before,
+.button:before,
+.wpcf7-submit:before,
+#subscribe-submit input:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-radius: 100%;
+    background-color: rgba(236, 240, 241, .3);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.button .button-primary .button-large:active:before,
+#wp-submit:active:before,
+button:active:before,
+input[type="button"]:active:before,
+input[type="reset"]:active:before,
+input[type="submit"]:active:before,
+.button:active:before,
+.wpcf7-submit:active:before,
+#subscribe-submit input:active:before {
+    width: 120%;
+    padding-top: 120%;
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+.button .button-primary .button-large:hover,
+#wp-submit:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:hover,
+.wpcf7-submit:hover {
+    background: #e5554e;
+    color: #fff;
+}
+
+.login #backtoblog a, .login #nav a {
+  color: #EFFFD6;
+}
+
+.login form .input, .login input[type=text]{
+    -webkit-appearance: none;
+    background-color: white;
+    font-family: inherit;
+    border: 1px solid #cccccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    height: 2.3125rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
