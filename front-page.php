@@ -67,21 +67,6 @@ $args = array('include' => '214');
       </div>
 <div class="clear"> </div>
 
-    <div id="portfolio">
-    <h1 class="center">Some of my completed projects</h1>
-    <div id="photos">
-    <?php echo do_shortcode('[gallery size="full"  ids="218,315,212,581,257,609,629,213,214,210,208,220,211,219,209,682,684,685,686" orderby="rand"]'); ?>
-    </div></div>
-
-<div class="clear"> </div>
-
-    <div id="request-quote">
-    <a href="http://frankwaive.com/?p=123"><h1>Request Quote</h1>
-    <span>Starting from N50,000, you could get a world class website!</span></a>
-
-    </div>
-
-<div class="clear"> </div>
 
 
     <div id="grey">
@@ -114,44 +99,13 @@ Free Consultation- I can also provide you with free consultation if you want.</p
     <div id="blog">
   <div class="row">
       <h1> Blog</h1>
-      <aside id="" class="small-12 large-3 columns"> <h1 class="enerhen hbs center">Social<br /> Advocacy</h1>
       <?php query_posts('category_name=Social Advocacy&showposts=3'); ?><p  class="tp">
   <?php while (have_posts()) : the_post(); ?>
           <a href="<?php the_permalink(); ?>" class="muchalacha">
             <div class="thumb"><?php the_post_thumbnail(); ?><p><?php the_title(); ?></p> </div>
             </a>  <br />
           <?php endwhile; ?></p>
-      </aside>
 
-
-      <aside id="" class="small-12 large-3 columns"><h1 class="peppema hbs center">Political <br />Opinions</h1>
-      <?php query_posts('category_name=Political Opinions&showposts=3'); ?><p  class="tp">
-  <?php while (have_posts()) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>">
-            <div class="thumb"><?php the_post_thumbnail(); ?><p><?php the_title(); ?></p> </div>
-            </a>  <br />
-          <?php endwhile; ?></p>
-      </aside>
-
-
-      <aside id="" class="small-12 large-3 columns"> <h1 class="udu hbs center">Web <br />Design</h1>
-      <?php query_posts('category_name=Nigerian Website Designer&showposts=3'); ?><p  class="tp">
-  <?php while (have_posts()) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>">
-            <div class="thumb"><?php the_post_thumbnail(); ?><p><?php the_title(); ?></p> </div>
-            </a>  <br />
-          <?php endwhile; ?></p>
-      </aside>
-
-
-      <aside id="" class="small-12 large-3 columns"> <h1 class="effurun hbs center">Tutorial <br />Related</h1>
-      <?php query_posts('category_name=Tutorials&showposts=3'); ?><p  class="tp">
-  <?php while (have_posts()) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>">
-            <div class="thumb"><?php the_post_thumbnail(); ?><p><?php the_title(); ?></p> </div>
-            </a>  <br />
-          <?php endwhile; ?></p>
-      </aside>
 
       </div>
   </div>
@@ -167,8 +121,8 @@ Free Consultation- I can also provide you with free consultation if you want.</p
   <div class="small-12 large-6 columns">
 <p>  Warri Office</p>
 <p>No. 2 Awkuzu Close, Off Aladja Avenue, Enerhen Road</p>
-<p>Phone: 07030248027</p>
-<p>Email: frank@frankwaive.com</p>
+<p>Phone: 08023257939</p>
+<p>Email: fwaive@yahoo.com</p>
 
 </div>
   </div>
