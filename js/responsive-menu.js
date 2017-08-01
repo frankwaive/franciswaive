@@ -1,7 +1,8 @@
 jQuery(function($) {
 
-    $("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"></div>');
+    $("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"></div></div></nav>');
     $(".footer-widgets .widget-area").addClass("small-12 large-4 columns");
+    $("ul#menu-francis").before('</div> </nav');
 
     $(".responsive-menu-icon").click(function() {
         $(this).next("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").slideToggle();
