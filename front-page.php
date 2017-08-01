@@ -68,21 +68,32 @@ $args = array('include' => '214');
 <div class="clear"> </div>
 
 
+  <div id="step-2" >
+    <div id="blog">
+  <div class="row">
+      <h1> Blog</h1>
+      <?php query_posts('showposts=10'); ?><p  class="tp">
+  <?php while (have_posts()) : the_post(); ?>
+          <a href="<?php the_permalink(); ?>" class="muchalacha">
+            <div class="thumb"><?php the_post_thumbnail('large'); ?><p><span><h4><?php the_title(); ?></h4><?php the_excerpt(); ?></span></p> </div>
+            </a>  <br />
+          <?php endwhile; ?></p>
+
+
+      </div>
+  </div>
+</div>
+
+
 
     <div id="grey">
 
         <div id="grey-inner" class="column large-6 small-12">
-                <h2>How to choose a Web Designer</h2>
-        <p>Over the years, I’ve been asked this same question over and over again, how do I decide which web designer to hire/employ? I’ve given several answers to this question both to prospective clients, organizations looking to hire a full-time web designer staff and other web workers.
-The web design Nigeria market is quite crowded, with about 80% of the available options lacking the required skill and character set.
+                <h2>About Francis Waive</h2>
+        <p>Rev. Francis Ejiroghene Waive; Senior Pastor at the Church of the Anointing Warri Nigeria West Africa  got born-again in his early teens  through the activities of the Scripture Union in October 1977. His experience in the Lord got deepened when he was baptized in the Holy Ghost on October 18th 1980. It was on that day that he received the call of God “to go preach the gospel to the lost and deliverance to the captives”.
+
 </p>
-
-<p>
-<strong>Here’s how I can help you</strong><br />
-You could hire me! – Over the years, I’ve acquired the skill and character set required as stated above for web design projects, I would offer reliable business partnerships. <br />
-
-Free Consultation- I can also provide you with free consultation if you want.</p>
-<p><a href="http://www.frankwaive.com/nigerian-website-designer-contact/request-a-design-proposal/">Click Web Design to request a web design quote</a></p>
+<p><a href="/about">Read More</a></p>
         </div>
     </div>
 <div class="clear"> </div>
@@ -95,21 +106,7 @@ Free Consultation- I can also provide you with free consultation if you want.</p
 
 
 
-  <div id="step-2" >
-    <div id="blog">
-  <div class="row">
-      <h1> Blog</h1>
-      <?php query_posts('category_name=Social Advocacy&showposts=3'); ?><p  class="tp">
-  <?php while (have_posts()) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>" class="muchalacha">
-            <div class="thumb"><?php the_post_thumbnail(); ?><p><?php the_title(); ?></p> </div>
-            </a>  <br />
-          <?php endwhile; ?></p>
 
-
-      </div>
-  </div>
-</div>
 
 <div id="contact">
 
@@ -119,7 +116,7 @@ Free Consultation- I can also provide you with free consultation if you want.</p
   </div>
 
   <div class="small-12 large-6 columns">
-<p>  Warri Office</p>
+
 <p>No. 2 Awkuzu Close, Off Aladja Avenue, Enerhen Road</p>
 <p>Phone: 08023257939</p>
 <p>Email: fwaive@yahoo.com</p>
