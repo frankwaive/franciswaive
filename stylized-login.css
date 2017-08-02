@@ -1,30 +1,41 @@
-html{ background: #3E2945;}
+html {
+    background: #3E2945;
+    background: url(images/franciswaive.jpg);
+    background-size: cover;
+}
+
 body {
     margin-bottom: -200px;
     padding-bottom: -200px;
     max-height: 85%;
-    background: #3E2945;
     font-weight: 100;
     font-family: sans-serif;
-     -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    background: #3E2945 url(images/franciswaive.jpg);
+    background-size: cover;
 }
+
 .login h1 a {
     background-image: url('images/logo.jpg');
 }
-body.login {
-    padding-top: 8em;
-    background: #3E2945;
-}
+
 .wp-core-ui .button-primary {}
+
 .wp-core-ui .button-primary:hover {}
+
 #login {
+    float: right;
+    height: 100vh;
     width: 500px;
     padding: 0;
     margin-bottom: -200px;
+    background: #1ebea5;
 }
+
 #login h1 {
     display: none;
 }
+
 .login form {
     background: none;
     border: none;
@@ -32,9 +43,12 @@ body.login {
     -moz-box-shadow: none;
 }
 
-.login label,.login form .forgetmenot label  {
-    color: #efefef; font-weight: 100;
+.login label,
+.login form .forgetmenot label {
+    color: #efefef;
+    font-weight: 100;
 }
+
 .button .button-primary .button-large,
 #wp-submit,
 button,
@@ -55,16 +69,17 @@ input[type="submit"],
     color: #efefef;
     transition: background-color .3s;
     padding-top: .5rem;
-  padding-right: 1rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 1rem;
-  font-size: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 1rem;
+    font-size: 1rem;
     width: 100%;
     height: 40px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
+
 .button .button-primary .button-large:before,
 #wp-submit:before,
 button:before,
@@ -89,6 +104,7 @@ input[type="submit"]:before,
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 .button .button-primary .button-large:active:before,
 #wp-submit:active:before,
 button:active:before,
@@ -102,6 +118,7 @@ input[type="submit"]:active:before,
     padding-top: 120%;
     transition: width .2s ease-out, padding-top .2s ease-out;
 }
+
 .button .button-primary .button-large:hover,
 #wp-submit:hover,
 button:hover,
@@ -114,11 +131,13 @@ input[type="submit"]:hover,
     color: #fff;
 }
 
-.login #backtoblog a, .login #nav a {
-  color: #EFFFD6;
+.login #backtoblog a,
+.login #nav a {
+    color: #EFFFD6;
 }
 
-.login form .input, .login input[type=text]{
+.login form .input,
+.login input[type=text] {
     -webkit-appearance: none;
     background-color: white;
     font-family: inherit;

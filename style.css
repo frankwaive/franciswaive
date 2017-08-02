@@ -490,7 +490,8 @@ a {
 .genesis-nav-menu .current-menu-item>a,
 .genesis-nav-menu .sub-menu .current-menu-item>a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item>a:focus {
-    background-color: #1ebea5;
+    background-color: #fff;
+    color: #777;
 }
 
 button,
@@ -574,6 +575,7 @@ input[type="submit"]:hover,
     line-height: 50px;
     padding: 0 15px;
     border: none;
+    color: #fff;
 }
 
 .current-menu-item>a,
@@ -582,17 +584,20 @@ ul.sub-menu current_page_item>a,
 .nav-secondary .genesis-nav-menu a:hover,
 #menu-item-887 a,
 nav li a.active {
-    color: #ecf0f1!important;
-    background-color: #1ebea5
+    color: #777!important;
+    background-color: #fff;
 }
 
 .nav-primary,
 .nav-secondary {
     background: none;
-    position: absolute;
-    width: 100%;
+    width: 70%;
     height: 50px;
-    z-index: 888
+    float: right;
+    background: #1ebea5;
+    background-image: url(images/shadow-top.png);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .site-description {
@@ -665,12 +670,10 @@ nav li a.active {
     font-weight: 200;
 }
 
-#menu-francis{ width: 75%; float: right; background: #1ebea5;     background-image: url(images/shadow-top.png);
-    background-repeat: no-repeat;
-    background-position: top center;}
-
-
-
+#menu-francis {
+    float: right;
+    width: auto!important;
+}
 
 
 
@@ -716,10 +719,12 @@ nav li a.active {
 
 
 
+
+
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 768px) {
     .headsearch {
         display: none;
     }
@@ -747,15 +752,7 @@ nav li a.active {
     .genesis-nav-menu.responsive-menu .menu-item:hover {
         position: static;
     }
-    .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item>a:hover,
-    .genesis-nav-menu.responsive-menu li a,
-    .genesis-nav-menu.responsive-menu li a:hover,
-    .genesis-nav-menu.responsive-menu li.current-menu-item>a {
-        background: none;
-        display: block;
-        line-height: 1.5;
-        padding: 15px;
-    }
+
     .genesis-nav-menu.responsive-menu .menu-item-has-children {
         cursor: pointer;
     }
@@ -793,16 +790,17 @@ nav li a.active {
         padding-left: 20px;
         margin: 0;
     }
-    .genesis-nav-menu.responsive-menu .sub-menu li a,
-    .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+
+    .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item>a:hover,
+    .genesis-nav-menu.responsive-menu li a,
+    .genesis-nav-menu.responsive-menu li a:hover,
+    .genesis-nav-menu.responsive-menu li.current-menu-item>a {
         background: none;
-        border: none;
-        box-shadow: none;
-        padding: 12px 0;
-        position: relative;
+        display: block;
+        line-height: 1.5;
+        padding: 15px;
         width: 100%;
     }
- 
     .nav-primary .genesis-nav-menu.responsive-menu li a,
     .nav-secondary .genesis-nav-menu.responsive-menu li a {
         color: #fff;
@@ -815,15 +813,20 @@ nav li a.active {
         color: #ecf0f1!important;
         background-color: #e5554e;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    #step-2 #blog h1{ padding-left: 25px; }
-    .thumb p, .thumb h4 { padding-right: 25px;}
-.responsive-menu-icon {
+
+    #step-2 #blog h1 {
+        padding-left: 25px;
+    }
+    .thumb p,
+    .thumb h4 {
+        padding-right: 25px;
+    }
+    .responsive-menu-icon {
         background-color: none;
         width: 50px;
-        margin-right: 0px;}
+        margin-right: 0px;
+    }
     .headsearch {
         display: none;
     }
@@ -831,9 +834,15 @@ nav li a.active {
         display: none;
     }
 
-    #menu-francis{ width: 100%; margin: 0 auto;}
+    #menu-francis {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-    .site-header{ width: 100%;  padding: 0px 0 0px 50px; }
+    .site-header {
+        width: 100%;
+        padding: 0px 0 0px 50px;
+    }
 
     #slider {
         background: url(images/bg-2.jpg);
@@ -847,5 +856,4 @@ nav li a.active {
     #slider .row {
         padding: 65% 10% 0 10%;
     }
-
 }
