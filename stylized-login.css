@@ -29,7 +29,7 @@ body {
     width: 500px;
     padding: 0;
     margin-bottom: -200px;
-    background: #1ebea5;
+    background: #777;
 }
 
 #login h1 {
@@ -64,9 +64,8 @@ input[type="submit"],
     overflow: hidden;
     border-width: 0;
     outline: none;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    background-color: #00943F;
-    color: #efefef;
+    background-color: #AFA394;
+    color: #fff;
     transition: background-color .3s;
     padding-top: .5rem;
     padding-right: 1rem;
@@ -75,9 +74,8 @@ input[type="submit"],
     font-size: 1rem;
     width: 100%;
     height: 40px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
+    text-shadow: none;
+
 }
 
 .button .button-primary .button-large:before,
@@ -133,7 +131,7 @@ input[type="submit"]:hover,
 
 .login #backtoblog a,
 .login #nav a {
-    color: #EFFFD6;
+    color: #fff;
 }
 
 .login form .input,
@@ -143,7 +141,7 @@ input[type="submit"]:hover,
     font-family: inherit;
     border: 1px solid #cccccc;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.75);
+    color: #fff;
     display: block;
     font-size: 0.875rem;
     margin: 0 0 1rem 0;
